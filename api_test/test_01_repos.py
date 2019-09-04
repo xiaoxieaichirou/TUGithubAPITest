@@ -1,5 +1,5 @@
 import pytest
-
+from TUGithubAPITest.api_test.conftest import env
 
 def test_list_all_public_repos(env):  #env是表示测试环境的fixture参数
     r = env.github.repos.list_all_public_repos()
